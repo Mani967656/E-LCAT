@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-LCAT — Result</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div>
+          <div class="badge">E-LCAT</div>
+          <h1>Prediction result</h1>
+          {% if crop %}
+            <p class="subtitle">Crop: <strong>{{ crop }}</strong></p>
+          {% else %}
+            <p class="subtitle">Your image has been analyzed.</p>
+          {% endif %}
+        </div>
+        <div class="header-actions">
+          <a class="button secondary" href="/">Predict another</a>
+        </div>
+      </header>
+
+      <main class="stack">
+        {% if error %}
+          <div class="card error">
+            <h2>Upload failed</h2>
+            <p class="muted">{{ error }}</p>
+          </div>
+        {% elif result %}
+          <div class="card">
+            <div class="result-grid">
+              <div>
+                <h2 class="result-title">{{ result.label }}</h2>
+                <p class="muted">Confidence: <strong>{{ (result.confidence * 100) | round(2) }}%</strong></p>
+                {% if result.preprocess %}
+                  <p class="hint">Preprocessing used: <code>{{ result.preprocess }}</code></p>
+                {% endif %}
+
+                <h3 class="section-title">Top predictions</h3>
+                <ul class="list">
+                  {% for item in result.top %}
+                    <li>
+                      <span class="pill">{{ item.label }}</span>
+                      <span class="muted">{{ (item.confidence * 100) | round(2) }}%</span>
+                    </li>
+                  {% endfor %}
+                </ul>
+
+                <h3 class="section-title">Recommendations</h3>
+                <ul class="list bullets">
+                  {% for rec in result.recommendations %}
+                    <li>{{ rec }}</li>
+                  {% endfor %}
+                </ul>
+               <!-- <p class="hint">
+                  These are general recommendations. For best results, follow local agricultural extension guidance.
+                </p> -->
+              </div>
+
+              <div class="preview">
+                {% if image_url %}
+                  <img src="{{ image_url }}" alt="Uploaded leaf image" />
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </main>
+
+      <footer class="footer">
+        <span><a href="/">Back</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
+
