@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-LCAT — Leaf Disease Prediction</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div>
+          <div class="badge">E-LCAT</div>
+          <h1>Leaf disease prediction</h1>
+          <p class="subtitle">Upload a leaf image to classify disease and get recommendations.</p>
+        </div>
+      </header>
+
+      <main class="card">
+        <form class="form" action="/predict" method="post" enctype="multipart/form-data">
+          <div class="grid">
+            <div>
+              <label class="label" for="image">Leaf image (JPG/PNG/WebP)</label>
+              <input class="input" id="image" name="image" type="file" accept="image/*" required />
+              <p class="hint">Tip: use a close-up, in-focus image with good lighting.</p>
+            </div>
+            <div></div>
+          </div>
+
+          <div class="actions">
+            <button class="button" type="submit">Predict disease</button>
+          </div>
+
+          <details class="details">
+            <summary>Advanced</summary>
+            <div class="kv">
+              <div><span>Model</span><code>{{ model_path }}</code></div>
+              <div><span>Labels</span><code>{{ labels_path }}</code></div>
+              <div><span>Recommendations</span><code>{{ recommendations_path }}</code></div>
+            </div>
+            <p class="hint">
+              If you add a <code>labels.json</code> in the project folder (list of class names), results will show real
+              disease names instead of <code>class_0</code>, <code>class_1</code>, etc.
+            </p>
+          </details>
+        </form>
+      </main>
+
+      <footer class="footer">
+        <span>Local app • <a href="/health">health</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
+
