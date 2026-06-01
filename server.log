@@ -1,0 +1,38 @@
+--- LCAT worker start 16-05-2026 10:10:38.16 ---
+INFO:     Started server process [15784]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64379 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52584 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52584 - "GET /static/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52584 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+2026-05-16 10:12:06.148791: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-16 10:12:15.695950: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-16 10:12:28.326636: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From c:\Users\anant\Downloads\LCAT\.venv\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+INFO:     127.0.0.1:59350 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54981 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58193 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54981 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64036 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64036 - "GET /static/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53902 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53902 - "GET /uploads/bc1d730e9e9e4b61bce9930912315e22.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64980 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64980 - "GET /uploads/ca714dc8ef5146debc752baf83ecd0f1.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54123 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54123 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58197 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58197 - "GET /uploads/4512e811357745caa1550f472f19209a.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58003 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65267 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65267 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51150 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62402 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:51150 - "GET /uploads/62872881ce754e11ae230d73ed312fc4.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51618 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51618 - "GET /uploads/ab2f6ad222fc4ed0a52903e69046e364.jpg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51618 - "GET / HTTP/1.1" 200 OK

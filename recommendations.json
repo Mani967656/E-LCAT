@@ -1,0 +1,62 @@
+{
+  "Pepper__bell___Bacterial_spot": [
+    "Remove infected pepper leaves and avoid handling plants when foliage is wet.",
+    "Use copper-based bactericide sprays on schedule and keep row spacing open for airflow."
+  ],
+  "Pepper__bell___healthy": [
+    "Continue regular scouting and remove weeds that can host pepper diseases.",
+    "Maintain balanced fertilization and irrigation to keep plants stress-free."
+  ],
+  "Potato___Early_blight": [
+    "Remove lower infected leaves early and avoid overhead irrigation in late day.",
+    "Apply a labeled protectant fungicide at first symptoms and rotate active ingredients."
+  ],
+  "Potato___Late_blight": [
+    "Immediately remove severely infected plants and destroy volunteer potato plants nearby.",
+    "Start a strict late blight fungicide program and avoid leaf wetness through proper irrigation timing."
+  ],
+  "Potato___healthy": [
+    "Use preventive field scouting and maintain proper earthing up to reduce tuber exposure.",
+    "Follow crop rotation and certified seed use to lower future disease pressure."
+  ],
+  "Tomato_Bacterial_spot": [
+    "Prune and discard infected leaves, then disinfect tools before moving to the next plant.",
+    "Spray copper-based bactericide with recommended intervals and reduce splashing irrigation."
+  ],
+  "Tomato_Early_blight": [
+    "Remove older infected leaves and keep mulch around plants to reduce soil splash.",
+    "Apply a preventive fungicide program and rotate products with different modes of action."
+  ],
+  "Tomato_Late_blight": [
+    "Uproot badly infected plants immediately and dispose of them away from the field.",
+    "Apply late blight-specific fungicides promptly and improve spacing for faster canopy drying."
+  ],
+  "Tomato_Leaf_Mold": [
+    "Increase greenhouse or field ventilation and avoid overhead watering.",
+    "Remove affected leaves and use a labeled fungicide targeted for leaf mold management."
+  ],
+  "Tomato_Septoria_leaf_spot": [
+    "Remove diseased lower leaves and avoid working plants when foliage is wet.",
+    "Use mulching plus scheduled fungicide sprays to prevent upward spread."
+  ],
+  "Tomato_Spider_mites_Two_spotted_spider_mite": [
+    "Spray strong water jets on leaf undersides to reduce mite populations early.",
+    "Use a recommended miticide and rotate chemistry to avoid resistance buildup."
+  ],
+  "Tomato__Target_Spot": [
+    "Prune infected foliage and improve air movement by proper plant spacing.",
+    "Use targeted fungicide applications and avoid prolonged leaf wetness periods."
+  ],
+  "Tomato__Tomato_YellowLeaf__Curl_Virus": [
+    "Rogue infected plants quickly and control whiteflies with traps and approved insecticides.",
+    "Use reflective mulch or insect-proof netting to reduce vector transmission."
+  ],
+  "Tomato__Tomato_mosaic_virus": [
+    "Remove infected plants and sanitize hands, tools, and stakes frequently.",
+    "Avoid tobacco contamination near crops and use virus-free seedlings."
+  ],
+  "Tomato_healthy": [
+    "Continue weekly scouting and maintain preventive sanitation around tomato beds.",
+    "Irrigate at root zone and keep nutrition balanced to sustain plant immunity."
+  ]
+}
